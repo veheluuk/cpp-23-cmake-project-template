@@ -13,5 +13,5 @@ set_property(TARGET PLACEHOLDER_PROJECT_NAME PROPERTY CXX_STANDARD 23)							# C
 # Fix C++ version when compiling on Visual Studio (fixes __cplusplus etc.)
 if(MSVC)
     target_compile_options(PLACEHOLDER_PROJECT_NAME PUBLIC "/Zc:__cplusplus")
-	target_compile_features(PLACEHOLDER_PROJECT_NAME PUBLIC cxx_std_23)								
+    target_compile_features(PLACEHOLDER_PROJECT_NAME PUBLIC cxx_std_23)								
 endif()
